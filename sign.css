@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+    background: #000;
+}
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(images/netflixbackground.jpg);
+    background-position: center;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    padding: 25px 60px;
+}
+nav a img{
+    width: 160px;
+}
+.form-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 430px;
+    padding:60px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.75);
+    transform: translate(-50%);
+}
+.form-wrapper h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.form-wrapper form{
+    padding: 25px 0 65px;
+}
+form .form-control{
+    height: 40px;
+    margin-bottom: 16px;
+}
+.form-control input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0 20px;
+
+}
+/* .form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+} */
+form button{
+    width: 100%;
+    padding:10px 0 ;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 4px;
+    background: #e50914;
+    margin: 15px 0 10px;
+    transition: 1.5s ease;
+}
+form button:hover{
+    background: #e50914;
+}
+form .form-help{
+    display: flex;
+    justify-content: space-between;
+
+}
+form .form-help :where(label, a){
+   font-size: 0.9rem;
+}
+.form-wrapper :where(label, p, small, a){
+    color: #b3b3b3;
+}
